@@ -1,0 +1,24 @@
+ ros2 launch universal_handeye handeye_calibration.launch.py 
+[INFO] [launch]: All log files can be found below /home/thunder/.ros/log/2026-07-28-16-05-06-798461-Thunder-64228
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [handeye_node-1]: process started with pid [64229]
+[handeye_node-1] [INFO] [1785234907.264056433] [universal_handeye]: Camera interface started
+[handeye_node-1] [INFO] [1785234907.265165305] [universal_handeye]: Calibration target detector initialized for type: aruco
+[handeye_node-1] [INFO] [1785234907.272916422] [universal_handeye]: TF Manager initialized. Listening for transform from 'base_link' to 'right_tcp'.
+[handeye_node-1] [INFO] [1785234907.273383403] [universal_handeye]: First image received.
+[handeye_node-1] [INFO] [1785234907.274276965] [universal_handeye]: Sampler initialized. Required samples: 60
+[handeye_node-1] [INFO] [1785234907.274660486] [universal_handeye]: Hand-eye solver initialized with method: TSAI
+[handeye_node-1] [INFO] [1785234907.276735371] [universal_handeye]: Camera Info received: 1280x720
+[handeye_node-1] [INFO] [1785234912.182243543] [universal_handeye]: Auto-sample mode enabled.
+[handeye_node-1] [WARN] [1785234924.382734666] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785234924.220492 but the latest data is at time 1785234923.915612, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785234929.390083342] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785234929.120619 but the latest data is at time 1785234927.742933, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [INFO] [1785234929.581015624] [universal_handeye]: Sample 1/60 collected.
+[handeye_node-1] [INFO] [1785234929.581267554] [universal_handeye]: Sample captured successfully.
+[handeye_node-1] [WARN] [1785234934.483604718] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785234934.321149 but the latest data is at time 1785234934.317758, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785234953.681271687] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785234953.522310 but the latest data is at time 1785234952.758753, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785234957.080552052] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.000m < 0.050m
+[handeye_node-1] [WARN] [1785234959.182499565] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785234959.022707 but the latest data is at time 1785234957.819828, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785234965.481223467] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785234965.323077 but the latest data is at time 1785234961.836808, when looking up transform from frame [right_tcp] to frame [base_link]
+
+
+

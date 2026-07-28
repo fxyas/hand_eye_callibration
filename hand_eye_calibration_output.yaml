@@ -1,0 +1,13 @@
+hand_eye_calibration:
+  parent_frame: base_link
+  child_frame: camera_link
+  transform:
+    translation:
+      x: -0.09513409990270011
+      y: 0.01996901762919759
+      z: 1.179469624401869
+    rotation:
+      x: 0.687143918627707
+      y: -0.437256489433966
+      z: 0.14047949118796027
+      w: -0.5629436118266332
