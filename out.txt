@@ -1,0 +1,61 @@
+[handeye_node-1] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:241
+[ERROR] [handeye_node-1]: process has died [pid 54826, exit code 1, cmd '/home/thunder/Documents/fayas/hand_eye_ws/install/universal_handeye/lib/universal_handeye/handeye_node --ros-args -r __node:=universal_handeye --params-file /home/thunder/Documents/fayas/hand_eye_ws/install/universal_handeye/share/universal_handeye/config/handeye.yaml'].
+thunder@Thunder:~/Documents/fayas/hand_eye_ws$ colcon build
+Starting >>> universal_handeye
+Finished <<< universal_handeye [0.76s]          
+
+Summary: 1 package finished [0.98s]
+thunder@Thunder:~/Documents/fayas/hand_eye_ws$ . install/setup.bash 
+thunder@Thunder:~/Documents/fayas/hand_eye_ws$ ros2 launch universal_handeye handeye_calibration.launch.py 
+[INFO] [launch]: All log files can be found below /home/thunder/.ros/log/2026-07-27-12-48-44-448791-Thunder-64155
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [handeye_node-1]: process started with pid [64156]
+[handeye_node-1] /usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+[handeye_node-1]   warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[handeye_node-1] [INFO] [1785136724.970835614] [universal_handeye]: Camera interface started
+[handeye_node-1] [INFO] [1785136724.972512929] [universal_handeye]: Calibration target detector initialized for type: aruco
+[handeye_node-1] [INFO] [1785136724.975574661] [universal_handeye]: TF Manager initialized. Listening for transform from 'base_link' to 'right_tcp'.
+[handeye_node-1] [INFO] [1785136724.976591088] [universal_handeye]: Sampler initialized. Required samples: 20
+[handeye_node-1] [INFO] [1785136724.977152787] [universal_handeye]: Hand-eye solver initialized with method: TSAI
+[handeye_node-1] [INFO] [1785136725.078359197] [universal_handeye]: Waiting for camera data...
+[handeye_node-1] [INFO] [1785136725.510915737] [universal_handeye]: Camera Info received: 1280x720
+[handeye_node-1] [INFO] [1785136725.520172012] [universal_handeye]: First image received.
+[handeye_node-1] [INFO] [1785136737.184187267] [universal_handeye]: Auto-sample mode enabled.
+[handeye_node-1] [INFO] [1785136737.289924089] [universal_handeye]: Sample 1/20 collected.
+[handeye_node-1] [INFO] [1785136737.290232328] [universal_handeye]: Sample captured successfully.
+[handeye_node-1] [WARN] [1785136737.389240128] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.000m < 0.050m
+[handeye_node-1] [WARN] [1785136738.593067996] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785136738.441505 but the latest data is at time 1785136738.435613, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785136739.490159779] [universal_handeye]: Pose rejected: not diverse enough. Reason: rotation diff 3.5deg < 10.0deg
+[handeye_node-1] [WARN] [1785136741.590158489] [universal_handeye]: Pose rejected: not diverse enough. Reason: rotation diff 3.4deg < 10.0deg
+[handeye_node-1] [INFO] [1785136743.390427395] [universal_handeye]: Sample 2/20 collected.
+[handeye_node-1] [INFO] [1785136743.390730824] [universal_handeye]: Sample captured successfully.
+[handeye_node-1] [WARN] [1785136743.682641883] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.000m < 0.050m
+[handeye_node-1] [INFO] [1785136746.283491631] [universal_handeye]: Sample 3/20 collected.
+[handeye_node-1] [INFO] [1785136746.283763241] [universal_handeye]: Sample captured successfully.
+[handeye_node-1] [WARN] [1785136746.389922142] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.005m < 0.050m
+[handeye_node-1] [WARN] [1785136747.393103820] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785136747.241841 but the latest data is at time 1785136747.239620, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785136748.483044079] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.037m < 0.050m
+[handeye_node-1] [WARN] [1785136752.404139918] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785136751.875467 but the latest data is at time 1785136751.281614, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785136753.498838562] [universal_handeye]: Pose rejected: not diverse enough. Reason: rotation diff 8.6deg < 10.0deg
+[handeye_node-1] [WARN] [1785136757.405742545] [universal_handeye]: TF lookup failed: Lookup would require extrapolation into the future.  Requested time 1785136756.575703 but the latest data is at time 1785136754.505628, when looking up transform from frame [right_tcp] to frame [base_link]
+[handeye_node-1] [WARN] [1785136758.490430098] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.035m < 0.050m
+[handeye_node-1] [INFO] [1785136761.383775530] [universal_handeye]: Sample 4/20 collected.
+[handeye_node-1] [INFO] [1785136761.384165690] [universal_handeye]: Sample captured successfully.
+[handeye_node-1] [WARN] [1785136761.483546733] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.000m < 0.050m
+[handeye_node-1] [WARN] [1785136763.483809661] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.049m < 0.050m
+[handeye_node-1] [WARN] [1785136765.483811691] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.050m < 0.050m
+[handeye_node-1] [WARN] [1785136767.582845180] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.046m < 0.050m
+[handeye_node-1] [WARN] [1785136769.583176761] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.027m < 0.050m
+[handeye_node-1] [WARN] [1785136771.783369514] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.021m < 0.050m
+[handeye_node-1] [WARN] [1785136773.783918077] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.021m < 0.050m
+[handeye_node-1] [WARN] [1785136775.883118637] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.031m < 0.050m
+[handeye_node-1] [WARN] [1785136777.983466737] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.018m < 0.050m
+[handeye_node-1] [INFO] [1785136779.784183123] [universal_handeye]: Sample 5/20 collected.
+[handeye_node-1] [INFO] [1785136779.784549182] [universal_handeye]: Sample captured successfully.
+[handeye_node-1] [WARN] [1785136780.082541025] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.000m < 0.050m
+[handeye_node-1] [WARN] [1785136782.684734848] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.022m < 0.050m
+[handeye_node-1] [WARN] [1785136784.783111282] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.043m < 0.050m
+[handeye_node-1] [INFO] [1785136785.883580614] [universal_handeye]: Sample 6/20 collected.
+[handeye_node-1] [INFO] [1785136785.883839594] [universal_handeye]: Sample captured successfully.
+[handeye_node-1] [WARN] [1785136786.884095589] [universal_handeye]: Pose rejected: not diverse enough. Reason: translation diff 0.049m < 0.050m
+
