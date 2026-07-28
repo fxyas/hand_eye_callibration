@@ -1,0 +1,38 @@
+universal_handeye:
+  ros__parameters:
+
+    mode: eye_to_hand # eye_in_hand or eye_to_hand
+
+    camera:
+      image_topic: /zed/zed_node/left/color/rect/image
+      camera_info_topic: /zed/zed_node/left/color/rect/camera_info
+      frame: camera_link # The TF frame of the camera
+
+    display:
+      show_image: true
+
+    output:
+      # Path is relative to where you run the node
+      file_path: "hand_eye_calibration_output.yaml"
+
+    robot:
+      base_frame: base_link
+      tool_frame: right_tcp
+
+    target:
+      type: aruco # Options: chessboard, aruco
+      rows: 7
+      columns: 9
+      square_size: 0.025 # in meters
+      marker_size: 0.05 # for ArUco, in meters
+      dictionary: DICT_5X5_50 # for ArUco
+      marker_id: -1 # specific marker ID for single ArUco, -1 for any
+
+    solver:
+      method: TSAI # Options: TSAI, PARK, HORAUD, ANDREFF, DANIILIDIS
+
+    samples:
+      required: 20
+      # Minimum distance between samples to ensure diversity
+      min_translation: 0.05 # meters
+      min_rotation: 10.0 # degrees
