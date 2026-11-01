@@ -34,7 +34,7 @@ setup(
         'console_scripts': [
             'handeye_node = universal_handeye.main:main',
             'goal_publisher_node = universal_handeye.goal_pub:main',
-            'goal_republisher_node = universal_handeye.goal_republisher:main',
+            'goal_republisher_node = universal_handeye.quest_republisher:main',
         ],
     },
 )
